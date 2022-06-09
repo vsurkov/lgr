@@ -2,9 +2,18 @@ package lgr
 
 import (
 	"fmt"
+	"time"
 )
 
 
 func Logger(text string) {
-	fmt.Println(text)
+	currentTime := time.Now()
+	fmt.Printf("%d-%d-%d %d:%d:%d - %s\n",
+		currentTime.Year(),
+		currentTime.Month(),
+		currentTime.Day(),
+		currentTime.Hour(),
+		currentTime.Hour(),
+		currentTime.Second(),
+		text)
 }

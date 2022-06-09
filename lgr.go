@@ -8,7 +8,7 @@ import (
 
 func Logger(text string) {
 	currentTime := time.Now()
-	fmt.Printf("%d-%d-%d %d:%d:%d - %s\n",
+	fmt.Printf("INFO: %d-%d-%d %d:%d:%d - %s\n",
 		currentTime.Year(),
 		currentTime.Month(),
 		currentTime.Day(),
